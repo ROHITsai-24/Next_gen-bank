@@ -11,9 +11,5 @@
       "src": "/(.*)",
       "dest": "/index.html"
     }
-  ],
-  "framework": "angular",
-  "config": {
-    "distDir": "dist/jpmcbank"
-  }
+  ]
 }
