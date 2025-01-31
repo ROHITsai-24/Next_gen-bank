@@ -27,10 +27,14 @@ export class BranchesComponent {
       "contactDetails":this.bcontact,
       "address":this.baddress
     }
-    this.service.addbranch(this.newbranch).subscribe((res)=>{
+    // this.service.addBranch(this.newbranch).subscribe((res)=>{
+    //   alert("Branch added successfully");
+    //   this.ngOnInit();
+    // })
+    this.service.addBranch(this.newbranch).subscribe((res: any) => {
       alert("Branch added successfully");
       this.ngOnInit();
-    })
+    });
   }
 
 }

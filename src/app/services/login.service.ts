@@ -23,7 +23,7 @@ export class LoginService {
     return this.http.get(`${this.baseUrl}/users/customer/${userid}`, { responseType: 'json' });
   }
 
-  getCustomerByName(username: any) {
+  getCustomerbyName(username: any) {
     return this.http.get(`${this.baseUrl}/customerbyName/${username}`, { responseType: 'json' });
   }
 }
