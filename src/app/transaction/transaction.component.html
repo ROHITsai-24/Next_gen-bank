@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-6">
+        <h1>Transfer Amount</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        <form class="form" (ngSubmit)="sendAmount()">
+          <div class="input-block">
+            <input class="input" type="text" id="email" name="email" [(ngModel)]="recieverId" required="">
+            <label for="email">Receiver Id</label>
+          </div>
+          <div class="input-block">
+            <input class="input" type="text" id="amt" name="amount" required="" [(ngModel)]="amount">
+            <label for="pass">Amount</label>
+          </div>
+          <div class="input-block">
+            <input class="input" type="password" id="pass" name="pass" required="" [(ngModel)]="password">
+            <label for="pass">Password</label>
+          </div>
+          <div class="input-block">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-4">
+        <div class="img">
+          <!-- SVG goes here -->
+        </div>
+      </div>
+    </div>
+  </div>
+  

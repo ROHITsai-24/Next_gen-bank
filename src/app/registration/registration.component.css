@@ -1,0 +1,130 @@
+.back {
+  color: #000;
+  overflow-x: hidden;
+  height: 100%;
+  background: linear-gradient(to right, #006400, #228B22);
+}
+
+input,
+textarea,
+select {
+  background-color: #E8F5E9;
+  border-radius: 50px !important;
+  padding: 12px 15px 12px 15px !important;
+  width: 100%;
+  box-sizing: border-box;
+  border: none !important;
+  border: 1px solid #E8F5E9 !important;
+  font-size: 16px !important;
+  color: #000 !important;
+}
+
+input::placeholder,
+textarea::placeholder,
+select::placeholder {
+  color: #000 !important;
+}
+
+input:focus,
+textarea:focus {
+  border: 1px solid #006400 !important;
+  outline-width: 0;
+}
+
+button:focus {
+  outline-width: 0;
+}
+
+.card {
+  border-radius: 0;
+  border: none;
+}
+
+.card1 {
+  width: 60%; /* Increased width for right side */
+  padding: 40px 30px 10px 30px;
+}
+
+.card2 {
+  width: 40%; /* Decreased width for left side */
+  background-image: linear-gradient(to right, #006400, #228B22);
+}
+
+.btn-color {
+  border-radius: 50px;
+  color: #fff;
+  background-image: linear-gradient(to right, #006400, #228B22);
+  padding: 15px;
+}
+
+.btn-color:hover {
+  background-image: linear-gradient(to right, #228B22, #006400);
+}
+
+.btn-white {
+  border-radius: 50px;
+  color: #006400;
+  background-color: #fff;
+  padding: 8px 40px;
+}
+
+.btn-white:hover {
+  color: #fff;
+  background-image: linear-gradient(to right, #006400, #228B22);
+}
+
+.bottom {
+  width: 100%;
+  margin-top: 15px !important;
+}
+
+@media screen and (max-width: 992px) {
+  .card1 {
+    width: 100%;
+  }
+  .card2 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px !important;
+  }
+  .card2 {
+    padding: 50px;
+  }
+}
+.card2 {
+  width: 40%; /* Decreased width for left side */
+  background-color: white; /* Changed background color to white */
+  display: flex; /* Use flexbox to center the image */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.img-container {
+  max-width: 80%; /* Adjust max width as needed */
+}
+
+.img-fluid {
+  max-width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+
+.img-container {
+  position: relative;
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center align items */
+}
+
+
+.bank-name {
+  color: white; /* Text color */
+  font-weight: bold; /* Font weight */
+  margin-top: -70px; /* Space between the image and text */
+  font-size: 1.5rem; /* Adjust font size as needed */
+}

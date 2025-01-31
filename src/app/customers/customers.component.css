@@ -1,0 +1,65 @@
+.container {
+    background-color: #e0f7e4; /* Light green background */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .text-c-green {
+    color: #2e7d32; /* Dark green for text */
+  }
+  
+  .table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: #ffffff;
+  }
+  
+  .table-bordered {
+    border: 1px solid #81c784; /* Light green border */
+  }
+  
+  .table-bordered td,
+  .table-bordered th {
+    padding: 12px;
+    border: 1px solid #81c784; /* Green border */
+    text-align: left;
+    color: #2e7d32; /* Dark green text */
+  }
+  
+  .table-bordered th {
+    background-color: #66bb6a; /* Green background */
+    color: white;
+  }
+  
+  .table-bordered td {
+    background-color: #f1f8e9; /* Very light green */
+  }
+  
+  .table-bordered tr:hover td {
+    background-color: #c8e6c9; /* Darker green on hover */
+  }
+  
+  .btn-c-green {
+    background-color: #4caf50; /* Green background for Submit button */
+    color: white; /* White text for better contrast */
+  }
+  
+  .btn-c-green:hover {
+    background-color: #388e3c; /* Darker green on hover */
+  }
+  
+  /* Input Field Placeholder Styling */
+  ::placeholder {
+    color: #66bb6a; /* Green color for placeholder text */
+    opacity: 1; /* Make the placeholder fully visible */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .col-md-8 {
+      margin-bottom: 20px;
+    }
+  }
+  

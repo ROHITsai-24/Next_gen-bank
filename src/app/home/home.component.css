@@ -1,0 +1,155 @@
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  transition: background-color 0.3s ease;
+}
+
+.navbar:hover {
+  background-color: #e2f0d9;
+}
+
+/* Hero Section */
+.hero {
+  position: relative; /* To position child elements */
+  padding: 100px 0;
+  color: white;
+  text-align: center;
+  overflow: hidden; /* Hide any overflow */
+}
+
+.hero-image {
+  width: 100%; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure the image covers the entire area */
+  position: absolute; /* Position behind text */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  z-index: -1; /* Place behind the text */
+}
+
+.hero-content {
+  position: relative; /* Positioning for text */
+  z-index: 1; /* Bring text above the image */
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  animation: fadeIn 1.5s ease;
+}
+.container {
+  position: relative; /* Ensures absolute positioning works correctly */
+  z-index: 1; /* Brings the text above the image */
+}
+
+
+/* About Us Section */
+.about {
+  padding: 50px 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about p {
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Services Section */
+.services {
+  padding: 50px 0;
+  background-color: #f0f8ff;
+}
+
+.service-box {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.services h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Contact Us Section */
+.contact {
+  padding: 50px 0;
+  background-color: #e2f0d9; /* Green background */
+}
+
+.contact h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact .form-control {
+  border: 2px solid #4CAF50; /* Green border */
+}
+
+.contact .form-control:focus {
+  border-color: #4CAF50; /* Focused green border */
+}
+
+.contact .form-control::placeholder {
+  color: #4CAF50; /* Placeholder color */
+  opacity: 1; /* Ensure placeholder is visible */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 20px 0;
+  margin-top: 50px;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+

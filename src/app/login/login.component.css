@@ -1,0 +1,137 @@
+.back {
+  color: #000;
+  overflow-x: hidden;
+  height: 100%;
+  background: linear-gradient(to right, #006400, #228B22);
+}
+
+/* Custom styles for the Green Bank name and image */
+.green-bank-name {
+  font-size: 50px;
+  font-weight: bold;
+  color: #006400;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.green-bank-image {
+  width: 150px; /* Adjust the size as needed */
+  height: auto;
+}
+
+input, textarea {
+  background-color: #F3E5F5;
+  border-radius: 50px !important;
+  padding: 12px 15px 12px 15px !important;
+  width: 100%;
+  box-sizing: border-box;
+  border: none !important;
+  border: 1px solid #fff !important;
+  font-size: 16px !important;
+  color: #000 !important;
+}
+
+input:focus, textarea:focus {
+  border: 1px solid #006400 !important;
+  outline-width: 0;
+}
+
+button:focus {
+  outline-width: 0;
+}
+
+.card {
+  border-radius: 0;
+  border: none;
+}
+
+/* Card 1 (Login Form) Border Customization */
+.card1 {
+  width: 50%;
+  padding: 40px 30px 10px 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 2px solid #006400; /* Green border around the login form */
+}
+
+.card2 {
+  width: 50%;
+  background-color: #F0FFF0;
+}
+
+.heading {
+  margin-bottom: 60px !important;
+}
+
+::placeholder {
+  color: #000 !important;
+}
+
+.form-control-label {
+  font-size: 12px;
+  margin-left: 15px;
+}
+
+.msg-info {
+  padding-left: 15px;
+  margin-bottom: 30px;
+}
+
+.btn-color {
+  border-radius: 50px;
+  color: #fff;
+  background-image: linear-gradient(to right, #006400, #228B22);
+  padding: 15px;
+  cursor: pointer;
+  border: none !important;
+  margin-top: 40px;
+}
+
+.btn-color:hover {
+  color: #fff;
+  background-image: linear-gradient(to right, #228B22, #006400);
+}
+
+.btn-white {
+  border-radius: 50px;
+  color: #006400;
+  background-color: #fff;
+  padding: 8px 40px;
+  cursor: pointer;
+  border: 2px solid #006400 !important;
+}
+
+.btn-white:hover {
+  color: #fff;
+  background-image: linear-gradient(to right, #006400, #228B22);
+}
+
+.bottom {
+  width: 100%;
+  margin-top: 15px !important;
+}
+
+.sm-text {
+  font-size: 15px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 992px) {
+  .card1 {
+    width: 100%;
+    padding: 40px 30px 10px 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px !important;
+  }
+
+  .card1 {
+    padding: 50px;
+  }
+}

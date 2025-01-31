@@ -1,0 +1,96 @@
+<div class="back py-5">
+  <div class="container px-4 py-3 mx-auto">
+    <div class="card card0">
+      <div class="d-flex flex-lg-row flex-column-reverse">
+        <!-- Left Side: Image and Green Bank Name -->
+        <div class="card card2 text-center d-flex align-items-center justify-content-center flex-column">
+          <!-- Centered Image -->
+          <div class="image-container mb-3">
+            <!-- <img src="assets/images/edit.png" alt="Green Bank Logo" class="img-fluid green-bank-image" /> -->
+          </div>
+          <!-- Green Bank Name -->
+          <h1 class="green-bank-name">Next Gen Bank</h1>
+        </div>
+
+        <!-- Right Side: Login Form -->
+        <div class="card card1 mx-auto border-custom">
+          <div class="row justify-content-center my-auto">
+            <div class="col-md-8 col-10">
+              <h3 class="mb-5 text-center heading">Welcome Back</h3>
+              <h6 class="msg-info">Please log in to your account</h6>
+              <form (ngSubmit)="onLogin()" #loginForm="ngForm">
+                <!-- Username or Email -->
+                <div class="form-group">
+                  <label class="form-control-label text-muted">Email</label>
+                  <input
+                    type="text"
+                    id="email"
+                    name="email"
+                    placeholder="Username or email id"
+                    class="form-control"
+                    [(ngModel)]="useremail"
+                    #emailInput="ngModel"
+                    required
+                  />
+                  <div
+                    *ngIf="
+                      emailInput.invalid &&
+                      (emailInput.dirty || emailInput.touched)
+                    "
+                    class="text-danger"
+                  >
+                    Username is required.
+                  </div>
+                </div>
+
+                <!-- Password -->
+                <div class="form-group">
+                  <label class="form-control-label text-muted">Password</label>
+                  <input
+                    type="password"
+                    id="psw"
+                    name="psw"
+                    placeholder="Password"
+                    class="form-control"
+                    [(ngModel)]="password"
+                    #passwordInput="ngModel"
+                    required
+                  />
+                  <div
+                    *ngIf="
+                      passwordInput.invalid &&
+                      (passwordInput.dirty || passwordInput.touched)
+                    "
+                    class="text-danger"
+                  >
+                    Password is required.
+                  </div>
+                </div>
+
+                <!-- Login Button -->
+                <div class="row justify-content-center my-3 px-3">
+                  <button
+                    class="btn-block btn-color"
+                    [disabled]="loginForm.invalid"
+                  >
+                    Login
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="bottom text-center mb-3">
+            <p class="sm-text mx-auto mb-5">
+              Don't have an account?
+              <button class="btn btn-white ml-2" routerLink="/signup">
+                <a id="login-link">Signup</a>
+              </button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

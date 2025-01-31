@@ -1,0 +1,112 @@
+/* Base Styles */
+h1 {
+    color: #1b5e20; /* Dark green for headings */
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container {
+    background-color: #e0f7e4; /* Light green background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styles */
+.table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px; /* Add margin to accommodate for expanding content */
+}
+
+.table th,
+.table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.table th {
+    background-color: #004d40; /* Dark green header */
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.table td {
+    background-color: #f1f8e9; /* Light green for rows */
+}
+
+.table tr:hover {
+    background-color: #c8e6c9; /* Slightly darker green on hover */
+}
+
+.table tr:nth-child(even) td {
+    background-color: #e8f5e9; /* Alternate row background color */
+}
+
+.table tr:last-child td {
+    border-bottom: none; /* No border for the last row */
+}
+
+/* Style for the IDs, Amount, and Date */
+.table td:first-child {
+    font-weight: bold;
+    color: #2e7d32; /* Darker green for ID text */
+}
+
+.table td:nth-child(2),
+.table td:nth-child(3) {
+    color: #1b5e20; /* Standard green for other data */
+}
+
+/* Expandable content style */
+.table-container {
+    max-height: 600px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.table-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+    background-color: #81c784; /* Green scrollbar */
+    border-radius: 10px;
+}
+
+.table-container::-webkit-scrollbar-track {
+    background-color: #e0f7e4; /* Light green background */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .table th,
+    .table td {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    .table {
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .table-container {
+        max-height: none;
+        overflow-y: visible;
+    }
+}

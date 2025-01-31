@@ -1,0 +1,89 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css);
+
+/* Base Styles */
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Body Styles */
+html, body {
+    height: 100%;
+    background-color: #e8f5e9; /* Light green background */
+}
+
+/* Container Styles */
+.container-fluid {
+    padding: 20px;
+}
+
+/* Card Styles */
+.order-card {
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 2.94px 0.06px rgba(4, 26, 55, 0.16);
+    margin-bottom: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.bg-c-blue {
+    background: linear-gradient(45deg, #4caf50, #81c784); /* Green gradient */
+}
+
+.bg-c-green {
+    background: linear-gradient(45deg, #43a047, #66bb6a); /* Darker green gradient */
+}
+
+.bg-c-yellow {
+    background: linear-gradient(45deg, #ffeb3b, #ffe082); /* Light yellow gradient */
+}
+
+.bg-c-pink {
+    background: linear-gradient(45deg, #f06292, #f48fb1); /* Pink gradient */
+}
+
+/* Header Styles */
+h1 {
+    color: #2e7d32; /* Dark green for headings */
+}
+
+/* Card Content Styles */
+.card-block {
+    padding: 25px;
+}
+
+/* Text Styles */
+h6 {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #fff; /* White text for balance */
+}
+
+/* Image Styles */
+.f-left {
+    float: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/* Responsive Styles */
+@media only screen and (min-width: 800px) {
+    .mya {
+        margin-left: 950px;
+        margin-top: -150px;
+    }
+}
+
+@media only screen and (max-width: 790px) {
+    .mya {
+        display: none;
+    }
+}
